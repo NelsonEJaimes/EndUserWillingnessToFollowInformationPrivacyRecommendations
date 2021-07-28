@@ -1,0 +1,1327 @@
+---
+title: End-user Willingness to Follow Expert Information Privacy Recommendations From a Tip Sheet.
+author:
+  - name: Nelson Jaimes
+    email: njaimes@gwmail.gwu.edu
+    affiliation: The George Washington University
+abstract: Prior research has examined segmentations of end-user populations by their information-security-related mental models, perceptions, and security-related intentions. Different categories of individuals have notable differences in technical background and privacy preferences. Rule lists and tip sheets are often deployed by organizations to enlist the help of the end-user to improve computer security. In this study, a group of 25 Amazon Mechanical Turk workers responded questions about their information-security-related intentions, then read a tip sheet about information privacy from the Cybersecurity and Infrastructure Security Agency, (CISA) then answered questions about their willingness to spend resources on following the recommendations from the tip sheet. This study finds that not all subjects are willing to spend money, time, or effort to follow the rules in the tip sheet. This study also finds that subjects that had higher scores on a security intentions scale were willing to spend a significantly different amount of effort following the recommendations on the tip sheet in some, but not all scenarios. The study concludes with recommendations based on these findings.
+
+bibliography: sigproc.bib
+csl: acm-sig-proceedings.csl
+output: rticles::acm_article
+---
+
+
+
+# Introduction 
+
+Efforts to improve information security and privacy in an end-user population have often included attempts to inform end-users to improve their mental models about information security and to persuade them to adopt information-security-protecting behavior.
+
+Prior research appears to show that end-users have notable differences in their information privacy perceptions and mental models.
+
+Many studies have attempted to reduce the complexity of variation in end-user perceptions and mental models by aggregating user perceptions into categories. 
+
+One of the benefits of segmentation of end-user populations by their beliefs and perceptions is that it might permit better prediction of end-user information-security-related behavior.
+
+Unfortunately, population segmentation is not directly translated into population behavior. The well-known privacy paradox is an observed gap between information security goals and information-security-seeking behavior in individuals.
+
+Some research has attempted to close the gap between perceptions and behavior by measuring individuals' willingness to spend resources in support of information-security-related goals.
+
+Another benefit of optimal segmentation of end-user populations is that it might allow information security experts to optimally persuade end-users to adopt information-security behaviors by tailoring advice for each of the knowledge and perception categories. 
+
+However, data about information security end-user perceptions is not always available, and tailored information delivery is not always possible, so it is not surprising that recommendations that target all end-user types (such as tip sheets) are still widely used.
+
+This study will evaluate the intentions of spending time, money, and effort resources of end-users after reading an information security recommendations tip sheet provided by the Cybersecurity and Infrastructure Security Agency (CISA).
+
+This study also attempts to determine whether segmentation of an end-user population by their information security behavior intentions results in significantly different willingness to spend resources to follow the recommendations on the tip sheet.
+
+
+## Research Questions
+
+* RQ1: How willing are individuals to spend time, money and/or effort resources to follow the cybersecurity recommendations from CISA about online privacy and passwords?
+* RQ2: When categorized by their responses to the Security Intentions Behavior Scale, (SeBIS) do individuals that belong to different groups intend to spend significantly different time, money, and/or effort resources to follow the online privacy and password recommendations from CISA?
+
+
+# Related Work
+
+
+## Privacy Perceptions
+
+The privacy paradox is a well-known [@acquisti2005privacy; @blank2014new] computer-security associated behavior, and it can describe the inconsistencies between computer security and privacy abstract goals and specific behavior in each individual. 
+
+## Advice Delivery
+
+Delivering advice with the intent of persuasion has been previously studied in several settings, [@dalal2010types; @meshi2012expert; @bonaccio2006advice; @yaniv2000advice; @howard2020human; @reeder2011poster] including advice by peers, experts, and computers. In the context of computer security and privacy, even small changes in advice delivery can have an effect [@al2018effectiveness; @albayram2017better]. 
+
+Several studies[@wang2013privacy; @wang2014field; @zhang2016privacy; @almuhimedi2015your; @al2018effectiveness; @albayram2017better; @johnston2010fear] have examined the effectiveness of information privacy advice that attempts to help users make better privacy protecting choices online.
+
+A 2020 study by Redmiles, et al. [@redmiles2020comprehensive] studied the usability of different types along axes of comprehensibility, perceived usefulness, and perceived actionability of the advice. It found that end-users quality ratings of information privacy advice were wide-ranging. Computer security experts participating did not agree on the prioritization of the advice, and the study found "significant room for improvement."
+
+A study by Johnston et al. [@johnston2010fear] evaluated the influence of fea appeal in end-user computer security compliance. It found that the impact of fear appeals are determined by perceptions of self-efficacy, response efficacy, threat severity, and social influence.
+
+A field study by Liu et al. [@liu2016follow] recruited subjects online using social media related to mobile devices that use the Android operating system. A personal mobile phone information privacy assistant was developed and evaluated in the study. Subjects in the study were convinced to follow most of the app's recommendations. Although some of those results might have happened due to social desirability, the findings are still promising for the field of information security and privacy usability.
+
+## Relating End-User Information to Protective Actions
+
+Several papers have attempted to find categories of end-user information privacy behavior. Initial segmentations like the often-cited Westin categories have not always matched with intended user behavior [@woodruff2014would].
+
+In a 2015 study by Kang et al, [@kang2015my] end-user mental models of the internet were evaluated. The study found that the amount of technical training (n.b. technical training did not necessarily mean computer security training) did not have a relationship to the amount of protective actions individuals took to protect their information. The same paper stated that knowledge about privacy threats and risks might predict privacy protecting behavior, and found many misunderstandings and use of suboptimal safety heuristics in the subjects the study interviewed.
+
+A 2016 study by Dupree et al [@dupree2016privacy] attempted to cluster 32 end-users by their attitudes and behaviors toward security practices. It found five different clusters, including "Lazy Experts," who helped others with security concerns, and "Fundamentalists," who did not usually help others with computer security. 
+
+A 2008 study by Beautement et al. [@beautement2008compliance] studied the cost-benefit perceptions of employer-required computer security policies. The study found that framing effort-related user costs as financial costs.
+
+A 2015 study by Egelman et al. [@egelman2015scaling] developed the Security behavior Intentions Scale, (SeBIS) which can be used for measuring computer security and information privacy goals.
+
+## Need for Streamlined Presentation of Information to End-Users
+
+A 2016 study by Rao et al. [@rao2016expecting] evaluated mismatches between data privacy policies and user expectations about them, given a lack of end-user motivation or ability to read data policies of different websites. It found that end-users found website data policies were perceived as hard to read, and found that around half of subjects were uninterested in knowing how their data was used. The paper argued that simplification of privacy notices could be achieved by emphasizing common mismatches between end-user expectations and existing policies. 
+
+## Willingness to Spend Resources on Information Privacy
+
+A 2007 study by Grossklags et al. [@grossklags200725] found that individuals were not willing to spend much on protecting their information. Of course, the study's findings might be different after information privacy issues that have happened in the public sphere since then, such as the Cambridge Analytica scandal. The effects of that scandal have been evaluated by several studies [@hinds2020wouldn; @gonzalez2019global; @brown2020should; @shipman2020ownership]. 
+
+Another study [@blythe2020security] evaluated willingness to pay for secure Internet of Things (IoT) devices by potential end-users. It found that willingness to spend financial resources on IoT devices increasees when indiviudals are primed advice related to information security.
+
+## Tailored surveys for specific goals
+
+The paper by Dupree et al [@dupree2016privacy] recommends clustering of end-users for specific end-goals, rather than establishing a more permanent classification of end-user behavior. 
+
+
+# Methods
+
+## Subjects
+
+In this study, 31 subjects completed onine surveys. Subjects were recruited using Amazon Mechanical Turk. They completed surveys hosted on Qualtrics. Six subjects failed attention checks, and 25 subjects were included in the data for analysis. Attention checks failure was manually determined by the author for each of the subjects if the subjects did not attempt to summarize the CISA tip sheet, or when they failed a multiple-choice attention check question.
+
+Subjects were categorized by high vs. low SeBIS scores, which resulted in placement into high or low groups based on whether each individual score was higher or lower than the average SeBIS score of the subjects in this study.
+
+## Tasks
+
+Subjects answered questions based on the SeBIS survey. Questions were taken from the Gelman et al. 2015 paper, [@egelman2015scaling] and were adapted as true/false binary questions in an effort to reduce subject survey fatigue. 
+
+After the SeBIS questions, subjects read an information privacy tip sheet provided by the Cybersecurity and Infrastructure Security Agency (CISA) as part of National Cybersecurity Awareness Month (NCSAM). After reading, subjects were asked to summarize the recommendations in the tip sheet. Finally, subjects answered questions about their willingness to spend time, money, and/or effort on following the advice in the tip sheet.
+
+## Data Analysis
+
+All plots and data analysis were conducted using R. To support the repeatability, reusability, and reliability of this research, all statistical tests are included in the R markdown code that generates the pdf for this document.
+
+To answer the first research question, descriptive plots were used to show the willingness of subjects to spend time, money and/or effort on following the tips from the tip sheets.
+
+To answer the second research question, subjects were divided into groups as described earlier and results were computed with each group. Groups were compared by Chi Square tests where numbers were sufficient, and by the Fisher Exact Test when Chi Square would not have provided a reliable answer. For continuous data, the Student's t-test was used to determine significance. 
+
+Importantly, the plots and data analysis for this paper can be automatically re-run with any new group of interest.
+
+## Limitations
+This study was limited by possible sampling error. There were no requirements placed on the mTurk workers recruited other than a high acceptance score, so the sample is likely not representative of any specific population. Of course, this could impact the ecological validity of the findings of this study. However, this is a natural avenue for future research. A greater number of subjects would allow stratification between age groups and/or other groups of people that might increase external validity. 
+This study used questions adapted from the SeBIS, but did not use the SeBIS. Any reductions in correlation between SeBIS scores and responses in this study might have been due to this change. Similar to the previous difficulty, this could be addressed in future research by determining the correlation between the adapted SeBIS used in this study and the original SeBIS. However, even though the SeBIS is adapted, the validity of the results in this study can be effectively considered using the adapted SeBIS used in this study.
+Finally, no baseline responses were obtained before reading the tip sheet, so it is uncertain whether the tip sheet had any effect. However, the fact that all subjects read the tip sheet assures that regardless of their prior preferences, all subjects were aware of the recommendations in the tip sheets. Further research could establish a baseline of a representative population.
+
+# Results
+
+## Overall Subject Responses
+
+Answering the first research question requires the description of the overall subject responses in reference to information security.
+
+### Overall SeBIS Scores
+Subject SeBIS scores spanned almost the entire possible range (Figure 1). The mean score was 15.12 (interquartile range = 12-18). 
+
+### Overall Multi-Factor Authentication Preferences
+Subjects were most willing to use Multi-Factor Authentication (MFA) when using banking websites, and least likely to use MFA when using learning websites. When given an option to use from zero to one hundred minutes, subjects were willing to spend a mean time of 33.17 minutes (interquartile range 10-50). Overall MFA preferences are plotted in Figure 2. 
+
+### Overall Willingness to Use a Password Manager
+Overall subject willingness to use a password manager is plotted in figure 4. When given an option to spend from 0-100 dollars on a password manager, the mean amount subjects were willing to spend was 30 dollars (interquartile range = 5-52). Overall subject willingness to spend money on a passsword manager is plotted in figure 5. 
+
+### Overall Willingness to Update Apps
+Subject responses regarding their willingness to update their apps (Figure 6) appeared to gravitate to secure options like enabling automatic updates or updating their apps after every request. The peak willingness to enable automatic updates occurred in education and job related apps. Not all subjects were willing to update their apps. A few subjects were never willing to update their apps, and several subjects were only willing to update their apps when the apps stop working. The peak of these less secure behaviors was in social media apps.
+
+### Overall Willingness to Verify App permissions
+No subjects were willing to always check whtether their app permissions are the minimum required for their apps to function. Less than 50 percent of subjects were willing to check their app permissions often. 
+
+### Overall Wifi-Seeking Behavior While Traveling
+Overall, a non-zero amount of subject reported that they were likely to use hotspots from an unknown source or public wireless internet. However, secure responses to internet seeking behavior was higher in secure responses (i.e. seeking non-public wifi or using a hotspot) than in insecure responses (i.e. using an unknown hotspot or public wifi). Responses between non-privacy-seeking and privacy
+seeking responses (A vs B) were significantly different and are plotted in Figure 8 (p = 0.0476176).
+
+## Grouped Subject Responses
+
+Answering the second research question requires the description and comparison of subject responses in reference to information security when grouped by high SeBIS scores vs. low SeBIS scores.
+
+### Grouped SeBIS Scores
+Subjects in the high scoring group had a mean SeBIS score of 18.75, (interquartile range 17.75 - 20.25) while subjects in the low scoring group had a mean SeBIS score of 11.50 (interquartile range 10.25 - 14.25). Subject SeBIS scores are plotted in Figure 9.
+
+### Grouped Multi-Factor Authentication Preferences
+Subject willingness to use MFA was not significantly different between high-scoring and low-scoring groups on the SeBIS. Subject responses related to MFA are plotted in Figure 10 and Figure 11.
+
+### Grouped Willingness to Use a Password Manager
+Subject willingness to use a Password Manager was not significantly different between high-scoring and low-scoring groups on the SeBIS. Subject responses related to password managers are plotted in figure 12 and figure 13.
+
+### Grouped Willingness to Update Apps
+Subject willingness to update apps was significantly different  (p < 0.00001 ) between high-scoring and low scoring groups.  Subject responses related to app-updating behavior are plotted in figure 14.
+
+### Grouped Willingness to Verify App permissions
+Subject willingness to verify app permissions was significantly different (p = 0.0068376) between high-scoring and low scoring groups.  Subject responses related to app-updating behavior are plotted in figure 15.
+
+### Grouped Wifi-Seeking Behavior While Traveling
+Subject internet seeking behavior intentions while traveling were significantly different between secure and not secure behaviors (p =
+0.010101 and p = 0.0438228) for the high-scoring group but not significant for the low scoring group both in wifi preferences and in hotspot preferences.  Subject responses related to app-updating behavior are plotted in figure 16.
+
+
+```{r setup, include=FALSE, echo=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(ggplot2)
+library(forcats)
+library(cowplot)
+library(purrr)
+library(tibble)
+library(wesanderson)
+
+
+
+raw_data <- read_excel("TipSheetSurvey/TipSheetSurvey_2020Dec9_914pm.xlsx")
+
+raw_data <- raw_data %>%
+  mutate(temp_row_num = row_number()) %>%
+  filter(!(temp_row_num %in% c(1))) %>%
+  select(-temp_row_num)%>%
+  mutate(subject_id = row_number())
+
+
+
+sebis_questions_positive <- paste0("Q",c(1,3,4,5,6,7,8,11,12,14,16,18,20,21,23,24))
+sebis_questions_negative <- paste0("Q",c(2,9,10,13,15,17,19,22))
+wanted_question_numbers <- paste0("Q",seq(1,24))
+
+
+raw_data_SeBIS_contents_df <- raw_data %>%
+  select(wanted_question_numbers) %>%
+  mutate_at(vars(sebis_questions_positive), ~ifelse(.== "True","1","0")) %>%
+  mutate_at(vars(sebis_questions_negative), ~ifelse(.== "True","0","1")) %>%
+  mutate_if(is.character, as.numeric) %>%
+  mutate(SeBIS_score = rowSums(.)) %>%
+  select(SeBIS_score)
+
+raw_data <- raw_data %>%
+  bind_cols(raw_data_SeBIS_contents_df)
+
+
+raw_data_low_SeBIS <- raw_data %>%
+  filter(SeBIS_score < 16) %>%
+  mutate(SeBIS_score_category = "low") %>%
+  mutate(temp_row_num = row_number()) %>%
+  filter(temp_row_num <= 8) %>%
+  select(-temp_row_num)
+
+#str(raw_data_low_SeBIS)
+
+raw_data_high_SeBIS <- raw_data %>%
+  filter(SeBIS_score > 16)%>%
+  mutate(SeBIS_score_category = "high") %>%
+  mutate(temp_row_num = row_number()) %>%
+  filter(temp_row_num <= 8) %>%
+  select(-temp_row_num)
+
+raw_data_SeBIS <- raw_data_low_SeBIS %>%
+  bind_rows(raw_data_high_SeBIS) %>%
+  mutate(SeBIS_score_category = as.factor(SeBIS_score_category))
+
+
+
+```
+
+
+```{r SeBIS_adapted, echo=FALSE, message = FALSE}
+
+normality_test_raw_data_SeBIS_contents_df <- shapiro.test(raw_data_SeBIS_contents_df$SeBIS_score)
+normality_test_raw_data_SeBIS_contents_df_pval <- normality_test_raw_data_SeBIS_contents_df[["p.value"]]
+
+# SeBIS_scores_histogram <- ggplot(raw_data_SeBIS_contents_df, aes(x = SeBIS_score)) + 
+#   geom_histogram(fill = wes_palette(n=1,name="Zissou1")) +
+#   theme_half_open()
+
+SeBIS_scores_boxplot <- ggplot(raw_data_SeBIS_contents_df, aes(y = SeBIS_score)) + 
+  geom_boxplot(fill = wes_palette(n=1,name="Zissou1")) +
+  theme_half_open()+ 
+  theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())
+
+print(SeBIS_scores_boxplot)
+
+#summary(raw_data_SeBIS %>% select(SeBIS_score))
+
+```
+Figure 1. SeBIS scores for all subjects in the study. The questions from the SeBIS were adapted such that subjects only had a True/False option for each question. The minimum score was 5 out of 24 questions and the maximum score was 21 out of 24 questions. The mean score was 15.12, and the median score was 16. 
+
+```{r willingness_MFA_scenario, echo=FALSE, message = FALSE}
+
+
+willing_to_use_MFA_df <- raw_data %>%
+  select(Q37) %>%
+  mutate(MFA_social_media = ifelse(str_detect(Q37, "Social media"),1,0),
+         MFA_banking = ifelse(str_detect(Q37, "Banking"),1,0),
+         MFA_shopping = ifelse(str_detect(Q37, "Shopping"),1,0),
+         MFA_learning = ifelse(str_detect(Q37, "Online learning"),1,0)) %>%
+  select(MFA_social_media, MFA_banking, MFA_shopping, MFA_learning) %>%
+  summarise(social_media = sum(MFA_social_media)/n()*100,
+           banking = sum(MFA_banking)/n()*100,
+           shopping = sum(MFA_shopping)/n()*100,
+           learning = sum(MFA_learning)/n()*100) 
+
+willing_to_use_MFA_df_long <- willing_to_use_MFA_df %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!arbitrary_id, names_to = "scenario", values_to = "percentage") %>%
+  select(-arbitrary_id)
+
+willing_to_use_MFA_plot <- ggplot(willing_to_use_MFA_df_long, aes(x=scenario, y=percentage)) +
+ geom_bar(stat="identity", fill = wes_palette(n=1,name="Zissou1"))+
+  theme_half_open() + 
+  theme(axis.title.x = element_blank())
+
+print(willing_to_use_MFA_plot)
+
+willing_to_use_MFA_counts_df_yes <- raw_data %>%
+  select(Q37) %>%
+  mutate(MFA_social_media = ifelse(str_detect(Q37, "Social media"),1,0),
+         MFA_banking = ifelse(str_detect(Q37, "Banking"),1,0),
+         MFA_shopping = ifelse(str_detect(Q37, "Shopping"),1,0),
+         MFA_learning = ifelse(str_detect(Q37, "Online learning"),1,0)) %>%
+  select(MFA_social_media, MFA_banking, MFA_shopping, MFA_learning) %>%
+  summarise(social_media = sum(MFA_social_media),
+           banking = sum(MFA_banking),
+           shopping = sum(MFA_shopping),
+           learning = sum(MFA_learning)
+           ) %>%
+  mutate(answer="yes")
+
+willing_to_use_MFA_counts_df_no <- raw_data %>%
+  select(Q37) %>%
+  mutate(MFA_social_media = ifelse(str_detect(Q37, "Social media"),1,0),
+         MFA_banking = ifelse(str_detect(Q37, "Banking"),1,0),
+         MFA_shopping = ifelse(str_detect(Q37, "Shopping"),1,0),
+         MFA_learning = ifelse(str_detect(Q37, "Online learning"),1,0)) %>%
+  select(MFA_social_media, MFA_banking, MFA_shopping, MFA_learning) %>%
+  summarise(
+           social_media = n() - sum(MFA_social_media),
+           banking = n() - sum(MFA_banking),
+           shopping = n() - sum(MFA_shopping),
+           learning = n() - sum(MFA_learning)
+           ) %>%
+  mutate(answer="no")
+
+willing_to_use_MFA_counts_df <- willing_to_use_MFA_counts_df_yes %>%
+  bind_rows(willing_to_use_MFA_counts_df_no)
+
+
+
+willing_to_use_MFA_counts_df_rownames <- column_to_rownames(willing_to_use_MFA_counts_df, var = "answer") 
+
+willing_to_use_MFA_counts_df_rownames_chisq <- fisher.test(willing_to_use_MFA_counts_df_rownames)
+
+willing_to_use_MFA_counts_df_rownames_chisq_pval <- willing_to_use_MFA_counts_df_rownames_chisq[["p.value"]]
+
+```
+Figure 2. Multi-Factor Authentication (MFA) preferences by type of website. Banking was the most popular purpose for use of MFA. Answers to this question were significantly different (chi square p = `r willing_to_use_MFA_counts_df_rownames_chisq_pval`).
+
+```{r time_willingness_MFA, echo=FALSE, message = FALSE, warning= FALSE}
+
+
+willing_to_use_MFA_time_df <- raw_data %>%
+  select(Q38_4) %>%
+  mutate(minutes = as.numeric(Q38_4)) %>%
+  select(minutes)
+
+
+willing_to_use_MFA_time_boxplot <- ggplot(willing_to_use_MFA_time_df, aes(y = minutes)) + 
+  geom_boxplot(fill = wes_palette(n=1,name="Zissou1"))+
+  theme_half_open()+ 
+  theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())
+
+print(willing_to_use_MFA_time_boxplot)
+
+
+```
+Figure 3. Willingness to spend time on setting up MFA for an online account when given a range from 0 to 100 minutes. Subject willingness to set up MFA varies widely, with a mean of 33.17 minutes (interquartile range 10-50). 
+
+```{r willingness_to_use_PM, echo=FALSE, message = FALSE, warning= FALSE}
+
+
+willing_to_use_PM_df <- raw_data %>%
+  select(Q39) %>%
+  mutate(PM_yes = ifelse(str_detect(Q39, "Yes"),1,0),
+         PM_maybe = ifelse(str_detect(Q39, "Maybe"),1,0),
+         PM_no = ifelse(str_detect(Q39, "No"),1,0)) %>%
+  select(PM_yes, PM_maybe, PM_no) %>%
+  summarise(yes = sum(PM_yes)/n()*100,
+           unsure = sum(PM_maybe)/n()*100,
+           no = sum(PM_no)/n()*100)
+
+willing_to_use_PM_long <- willing_to_use_PM_df %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!arbitrary_id, names_to = "willingness", values_to = "percentage") %>%
+  select(-arbitrary_id) 
+
+
+willing_to_use_PM_long_plot <- ggplot(willing_to_use_PM_long, aes(x=willingness, y=percentage)) +
+ geom_bar(stat="identity", fill = wes_palette(n=1,name="Zissou1"))+
+  theme_half_open()+ 
+  theme(axis.title.x = element_blank())
+
+print(willing_to_use_PM_long_plot)
+
+
+```
+Figure 4. Willingness to use a Password Manager. Around half of subjects were willing to use a password manager, and many subjects were unsure about using a password manager. 
+
+```{r money_willingness_PM, echo=FALSE, message = FALSE}
+
+
+money_willingness_PM_df <- raw_data %>%
+  select(Q40_1)%>%
+  filter(!(is.na(Q40_1))) %>%
+  mutate(dollars = as.numeric(Q40_1)) %>%
+  select(dollars)
+
+money_willingness_PM_boxplot <- ggplot(money_willingness_PM_df, aes(y = dollars)) + 
+  geom_boxplot(fill = wes_palette(n=1,name="Zissou1"))+
+  theme_half_open()+ 
+  theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())
+
+
+print(money_willingness_PM_boxplot)
+
+#summary(money_willingness_PM_df)
+
+```
+Figure 5. Willingness to spend money on a Password Manager when given a range from 0 to 100 dollars. Subject willingness to spend money on a password manager is positively skewed. The mean amount subjects were willing to spend was 30 dollars (interquartile range 5-52).
+
+```{r update_frequency, echo=FALSE, message = FALSE, warning = FALSE}
+wanted_question_numbers_Q41 <- paste0("Q41_",seq(1,9))
+
+
+update_frequency_df <- raw_data %>%
+  select(all_of(wanted_question_numbers_Q41))
+
+frequency_ordering = c("Never update after installation",
+                       "Update when it stops working",
+                       "Update after several requests",
+                       "Update after every request",
+                       "Enable automatic updates")
+
+frequency_ordering_labels = c("Never",
+                       "Stops",
+                       "Several",
+                       "Every",
+                       "Automatic")
+
+update_frequency_df_long <- update_frequency_df %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!arbitrary_id, names_to = "app_category_code", values_to = "frequency_text") %>%
+  mutate(frequency_text = recode(frequency_text,
+                                 "Never update after installation" = "Never",
+                                 "Update when it stops working" = "Stops",
+                                 "Update after several requests" = "Several",
+                                 "Update after every request" = "Every",
+                                 "Enable automatic updates" = "Automatic"
+                                 )) %>%
+  mutate(frequency_text = as.factor(frequency_text)) %>%
+  mutate(frequency_text = fct_relevel(frequency_text, frequency_ordering_labels))
+
+app_category_descriptions <- c("banking",
+                               "social_media",
+                               "video_game",
+                               "education",
+                               "job",
+                               "anti_virus",
+                               "shopping_general",
+                               "ordering_food",
+                               "transportation"
+                               )
+
+
+
+
+
+update_frequency_df_long_plot <- ggplot(update_frequency_df_long, aes(x= app_category_code)) +
+
+  geom_bar(aes(fill=frequency_text), position = position_dodge()) + 
+  scale_x_discrete(labels =  app_category_descriptions) + 
+  theme_half_open() +
+  theme(axis.text.x = element_text(angle=90, vjust=0.5, hjust=1)) +
+  scale_fill_manual(values = wes_palette(n=5,name="Zissou1"))+ 
+  theme(axis.title.x = element_blank(), legend.title = element_blank())
+
+print(update_frequency_df_long_plot)
+
+
+```
+Figure 6. Willingness to update apps by the purpose of the apps. Overall, the most popular responses from subjects were updating apps automatically or after every request from the app. Updating automatically was the most popular in every application other than in video games and in food ordering apps. The applications where automatic apps were most likely were in education apps or job-related apps.
+
+
+```{r willingness_verify_permissions, echo=FALSE, message = FALSE, warning=FALSE}
+
+willingness_verify_permissions_df <- raw_data %>%
+  select(Q42) %>%
+  mutate(Not_Applicable_bool = ifelse(str_detect(Q42, "Not Applicable"),1,0),
+         Rarely_bool = ifelse(str_detect(Q42, "Rarely"),1,0),
+         Sometimes_bool = ifelse(str_detect(Q42, "Sometimes"),1,0),
+         Often_bool = ifelse(str_detect(Q42, "Often"),1,0),
+         Always_bool = ifelse(str_detect(Q42, "Always"),1,0)
+         ) %>%
+  select(-Q42) %>%
+  summarise(Not_Applicable = sum(Not_Applicable_bool)/n()*100,
+           Rarely = sum(Rarely_bool)/n()*100,
+           Sometimes = sum(Sometimes_bool)/n()*100,
+           Often = sum(Often_bool)/n()*100,
+           Always = sum(Always_bool)/n()*100,
+           )
+
+willingness_ordering <- c("Not_Applicable", "Rarely", "Sometimes", "Often", "Always")
+
+willingness_verify_permissions_long <- willingness_verify_permissions_df %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!arbitrary_id, names_to = "willingness", values_to = "percent") %>%
+  select(-arbitrary_id) %>%
+  mutate(willingness = as.factor(willingness)) %>%
+  mutate(willingness = fct_relevel(willingness, willingness_ordering)) 
+
+willingness_verify_permissions_long_plot <- ggplot(willingness_verify_permissions_long, aes(x=willingness, y=percent)) +
+ geom_bar(stat="identity",fill = wes_palette(n=1,name="Zissou1"))+
+  theme_half_open()+ 
+  theme(axis.title.x = element_blank())
+print(willingness_verify_permissions_long_plot)
+
+
+
+```
+Figure 7. Willingness to verify app permissions are the minimum required for the app to function. Even though subjects had just read a tip sheet from an expert source (CISA), no subjects were willing to always check whether their app permissions are the minimum for the app to function, and less than half of subjects were willing to check their apps' permisisons often. 
+
+
+```{r travel_behavior, echo=FALSE, message = FALSE, warning=FALSE}
+
+wanted_question_numbers_Q44 <- c("Q44_6", "Q44_1", "Q44_3", "Q44_4")
+
+travel_behavior_df <- raw_data %>%
+  select(all_of(wanted_question_numbers_Q44))
+
+travel_behavior_ordering = c("Unlikely", "Not Sure", "Likely")
+
+travel_behavior_df_long <- travel_behavior_df %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!c(arbitrary_id), names_to = "travel_behavior_code", values_to = "travel_behavior_text") 
+
+
+travel_behavior_df_long_summary <- travel_behavior_df_long %>%
+  group_by(travel_behavior_code, travel_behavior_text, .drop = FALSE) %>%
+  summarise(count = n()) %>%
+  ungroup() %>%
+  complete(travel_behavior_code, travel_behavior_text, fill = list(count=0)) #%>%
+
+
+travel_behavior_df_long_summary_extended <- travel_behavior_df_long_summary %>%
+  mutate(travel_behavior_text = as.factor(travel_behavior_text)) %>%
+  mutate(travel_behavior_text = fct_relevel(travel_behavior_text, travel_behavior_ordering)) %>%
+  mutate(travel_behavior_code_group = recode(travel_behavior_code,
+                                             "Q44_6"="public",
+                                             "Q44_1"="public",
+                                             "Q44_3"="non_public",
+                                             "Q44_4"="non_public") ) %>%
+  mutate(travel_behavior_code_group = as.factor(travel_behavior_code_group)) %>%
+  mutate(travel_behavior_code = recode(travel_behavior_code,
+                                             "Q44_6"="hotspot_unknown",
+                                             "Q44_1"="wifi_public",
+                                             "Q44_3"="wifi_non_public",
+                                             "Q44_4"="hotspot_personal") )
+
+
+
+travel_behavior_df_long_summary_extended_all_public_plot<- ggplot(travel_behavior_df_long_summary_extended %>% filter(as.character(travel_behavior_code_group) =="public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="Zissou1"))+
+  #facet_wrap(travel_behavior_code_group~. , scales = "free_x")+
+  #scale_x_discrete(labels =  travel_behavior_descriptions_public) +
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank()) +
+  ylim(0,17)
+
+travel_behavior_df_long_summary_extended_all_non_public_plot<- ggplot(travel_behavior_df_long_summary_extended %>% filter(as.character(travel_behavior_code_group) =="non_public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="Zissou1"))+
+  #facet_wrap(travel_behavior_code_group~. , scales = "free_x")+
+  #scale_x_discrete(labels =  travel_behavior_descriptions_public) +
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank()) +
+  ylim(0,17)
+
+travel_behavior_df_long_summary_extended_all_non_public_plot_legend <- ggplot(travel_behavior_df_long_summary_extended %>% filter(as.character(travel_behavior_code_group) =="non_public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="Zissou1"))+
+  #facet_wrap(travel_behavior_code_group~. , scales = "free_x")+
+  #scale_x_discrete(labels =  travel_behavior_descriptions_public) +
+  theme( axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank()) +
+  ylim(0,17)
+
+plot_grid(
+          travel_behavior_df_long_summary_extended_all_public_plot,
+          travel_behavior_df_long_summary_extended_all_non_public_plot,
+          cowplot::get_legend(travel_behavior_df_long_summary_extended_all_non_public_plot_legend),
+          labels = c('A','B'),
+          ncol =3,
+          align = "h", 
+          axis = "b")
+
+
+travel_behavior_df_wide_summary_extended_hotspot <- travel_behavior_df_long_summary_extended %>%
+  filter(as.character(travel_behavior_code) %in% c("hotspot_unknown", "hotspot_personal")) %>%
+  pivot_wider(names_from = travel_behavior_text , values_from = count) %>%
+  select(-travel_behavior_code_group)
+
+travel_behavior_df_wide_summary_extended_hotspot_pretest <- remove_rownames(travel_behavior_df_wide_summary_extended_hotspot) %>% 
+  mutate(travel_behavior_code = as.character(travel_behavior_code))
+
+travel_behavior_df_wide_summary_extended_hotspot_pretest <- column_to_rownames(travel_behavior_df_wide_summary_extended_hotspot_pretest, 'travel_behavior_code')
+
+travel_behavior_df_wide_summary_extended_hotspot_fisher <- fisher.test(travel_behavior_df_wide_summary_extended_hotspot_pretest)
+travel_behavior_df_wide_summary_extended_hotspot_fisher_pval <- travel_behavior_df_wide_summary_extended_hotspot_fisher[["p.value"]]
+
+travel_behavior_df_wide_summary_extended_wifi <- travel_behavior_df_long_summary_extended %>%
+  filter(as.character(travel_behavior_code) %in% c("wifi_public", "wifi_non_public")) %>%
+  pivot_wider(names_from = travel_behavior_text , values_from = count) %>%
+  select(-travel_behavior_code_group)
+
+
+travel_behavior_df_wide_summary_extended_wifi_pretest <- remove_rownames(travel_behavior_df_wide_summary_extended_wifi) %>% 
+  mutate(travel_behavior_code = as.character(travel_behavior_code))
+
+travel_behavior_df_wide_summary_extended_wifi_pretest <- column_to_rownames(travel_behavior_df_wide_summary_extended_wifi_pretest, 'travel_behavior_code')
+
+travel_behavior_df_wide_summary_extended_wifi_fisher <- fisher.test(travel_behavior_df_wide_summary_extended_wifi_pretest)
+travel_behavior_df_wide_summary_extended_wifi_fisher_pval <- travel_behavior_df_wide_summary_extended_wifi_fisher[["p.value"]]
+
+
+```
+Figure 8. Behavior related to internet access while traveling. In A, risky behavior responses are shown. Overall, a non-zero amount of subjects reported they were likely to use hotspots from an unknown source or public wifi. More subjects responded they were likely to use a personal hotspot or wait until they could access a non-public wifi than any other option. Responses between non-privacy-seeking and privacy seeking responses (A vs B) were significantly different (p = `r travel_behavior_df_wide_summary_extended_wifi_fisher_pval`).
+
+
+
+```{r SeBIS_adapted_2, echo=FALSE, message = FALSE}
+
+
+normality_test_raw_data_SeBIS_contents_df <- shapiro.test(raw_data_SeBIS_contents_df$SeBIS_score)
+normality_test_raw_data_SeBIS_contents_df_pval <- normality_test_raw_data_SeBIS_contents_df[["p.value"]]
+
+
+raw_data_SeBIS_scored <- raw_data_SeBIS %>% 
+  select(SeBIS_score, SeBIS_score_category) %>%
+  mutate(SeBIS_score_category = as.character(SeBIS_score_category))
+
+SeBIS_scores_boxplot <- ggplot(raw_data_SeBIS_scored, aes(y = SeBIS_score)) +
+  geom_boxplot(aes(fill = SeBIS_score_category)) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+ 
+  theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())
+
+
+print(SeBIS_scores_boxplot)
+
+```
+Figure 9. SeBIS score by SeBIS score group. Subjects in the high group had a mean SeBIS score of 18.75, (interquartile range 17.75 - 20.25) while subjects in the low group had a mean SeBIS score of 11.50 (interquartile range 10.25 - 14.25).
+
+
+```{r willingness_MFA_scenario_SeBIS, echo=FALSE, message = FALSE, warning = FALSE}
+
+
+
+willing_to_use_MFA_df <- raw_data_SeBIS %>%
+  select(subject_id, SeBIS_score_category, Q37) %>%
+  mutate(MFA_social_media = ifelse(str_detect(Q37, "Social media"),1,0),
+         MFA_banking = ifelse(str_detect(Q37, "Banking"),1,0),
+         MFA_shopping = ifelse(str_detect(Q37, "Shopping"),1,0),
+         MFA_learning = ifelse(str_detect(Q37, "Online learning"),1,0)) 
+
+willing_to_use_MFA_df_SeBIS_low <- willing_to_use_MFA_df%>%
+  filter(as.character(SeBIS_score_category)=="low") %>%
+  summarise(social_media = sum(MFA_social_media)/n()*100,
+           banking = sum(MFA_banking)/n()*100,
+           shopping = sum(MFA_shopping)/n()*100,
+           learning = sum(MFA_learning)/n()*100)%>%
+  mutate(SeBIS_score = "low")
+
+willing_to_use_MFA_df_SeBIS_high <- willing_to_use_MFA_df%>%
+  filter(as.character(SeBIS_score_category)=="high") %>%
+  summarise(social_media = sum(MFA_social_media)/n()*100,
+           banking = sum(MFA_banking)/n()*100,
+           shopping = sum(MFA_shopping)/n()*100,
+           learning = sum(MFA_learning)/n()*100) %>%
+  mutate(SeBIS_score = "high")
+
+willing_to_use_MFA_df_long <- willing_to_use_MFA_df_SeBIS_low %>%
+  bind_rows(willing_to_use_MFA_df_SeBIS_high) %>%
+  mutate(SeBIS_score = as.factor(SeBIS_score))
+
+willing_to_use_MFA_df_long <- willing_to_use_MFA_df_long %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!c(arbitrary_id, SeBIS_score), names_to = "scenario", values_to = "percentage") %>%
+  select(-arbitrary_id)
+
+willing_to_use_MFA_plot <- ggplot(willing_to_use_MFA_df_long, aes(x=scenario, y=percentage)) +
+ geom_bar(stat="identity", aes(fill = SeBIS_score), position = position_dodge())+
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=2,name="GrandBudapest1"))+
+  theme(axis.title.x = element_blank(), legend.title = element_blank())
+
+print(willing_to_use_MFA_plot)
+
+willing_to_use_MFA_df_SeBIS_test_low <- willing_to_use_MFA_df%>%
+  filter(as.character(SeBIS_score_category)=="low") %>%
+  summarise(social_media_yes = sum(MFA_social_media),
+           banking_yes = sum(MFA_banking),
+           shopping_yes = sum(MFA_shopping),
+           learning_yes = sum(MFA_learning)
+           )%>%
+  mutate(SeBIS_score = "low")
+
+willing_to_use_MFA_df_SeBIS_test_high <- willing_to_use_MFA_df%>%
+  filter(as.character(SeBIS_score_category)=="high") %>%
+  summarise(social_media_yes = sum(MFA_social_media),
+           banking_yes = sum(MFA_banking),
+           shopping_yes = sum(MFA_shopping),
+           learning_yes = sum(MFA_learning)
+           ) %>%
+  mutate(SeBIS_score = "high")
+
+willing_to_use_MFA_df_SeBIS_test <- willing_to_use_MFA_df_SeBIS_test_low %>%
+ bind_rows(willing_to_use_MFA_df_SeBIS_test_high)
+
+willing_to_use_MFA_df_SeBIS_test <- column_to_rownames(willing_to_use_MFA_df_SeBIS_test, var = "SeBIS_score")
+
+willing_to_use_MFA_df_SeBIS_test_fisher <- fisher.test(willing_to_use_MFA_df_SeBIS_test)
+
+willing_to_use_MFA_df_SeBIS_test_fisher_pval <- willing_to_use_MFA_df_SeBIS_test_fisher[["p.value"]]
+
+```
+Figure 10. Multi-Factor Authentication (MFA) preferences by SeBIS score grouped by type of website. The high scoring group and the low scoring group on the SeBIS did not have significantly different Multi-Factor Authentication (MFA) responses (p=`r willing_to_use_MFA_df_SeBIS_test_fisher_pval`). 
+
+```{r time_willingness_MFA_SeBIS, echo=FALSE, message = FALSE, warning = FALSE}
+
+
+willing_to_use_MFA_time_df <- raw_data_SeBIS %>%
+
+  select(Q38_4, SeBIS_score_category) %>%
+  mutate(time_willingness = as.numeric(Q38_4)) %>%
+  select(time_willingness, SeBIS_score_category)
+
+
+willing_to_use_MFA_time_boxplot <- ggplot(willing_to_use_MFA_time_df, aes(y = time_willingness)) +
+  geom_boxplot(aes(fill = SeBIS_score_category)) +
+  #facet_grid(SeBIS_score_category~.)+
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(axis.title.x = element_blank(), legend.title = element_blank()) + 
+  theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())
+
+print(willing_to_use_MFA_time_boxplot)
+
+time_willingness_by_SeBIS_score_category_t_test <- t.test(time_willingness ~ SeBIS_score_category, data = willing_to_use_MFA_time_df)
+
+time_willingness_by_SeBIS_score_category_t_test_pval <- time_willingness_by_SeBIS_score_category_t_test[["p.value"]]
+
+```
+Figure 11. Willingness to spend time on setting up MFA for an online account in subjects grouped by having high scores vs. low scores on the SeBIS. There were no significant differences between the high and low scoring groups (p = `r time_willingness_by_SeBIS_score_category_t_test_pval`)
+
+```{r willingness_to_use_PM_SeBIS, echo=FALSE, message = FALSE, warning = FALSE}
+
+
+willing_to_use_PM_df <- raw_data_SeBIS %>%
+  select(Q39, SeBIS_score_category) %>%
+  mutate(PM_yes = ifelse(str_detect(Q39, "Yes"),1,0),
+         PM_maybe = ifelse(str_detect(Q39, "Maybe"),1,0),
+         PM_no = ifelse(str_detect(Q39, "No"),1,0)) %>%
+  select(PM_yes, PM_maybe, PM_no, SeBIS_score_category) 
+
+willing_to_use_PM_df_low <- willing_to_use_PM_df %>%
+  filter(as.character(SeBIS_score_category) == "low") %>%
+  summarise(yes = sum(PM_yes),
+           unsure = sum(PM_maybe),
+           no = sum(PM_no))%>%
+  mutate(SeBIS_score = "low")
+
+willing_to_use_PM_df_high <- willing_to_use_PM_df %>%
+  filter(as.character(SeBIS_score_category) == "high") %>%
+  summarise(yes = sum(PM_yes),
+           unsure = sum(PM_maybe),
+           no = sum(PM_no))%>%
+  mutate(SeBIS_score = "high")
+
+willing_to_use_PM_df_SeBIS <- willing_to_use_PM_df_low %>%
+  bind_rows(willing_to_use_PM_df_high) 
+
+willing_to_use_PM_df_SeBIS_test <- column_to_rownames(willing_to_use_PM_df_SeBIS, var = "SeBIS_score") 
+
+willing_to_use_MFA_df_SeBIS_test_fisher <- fisher.test(willing_to_use_PM_df_SeBIS_test)
+
+
+
+
+willing_to_use_PM_long <- willing_to_use_PM_df_SeBIS %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!c(arbitrary_id, SeBIS_score) , names_to = "willingness", values_to = "count") %>%
+  select(-arbitrary_id)
+
+
+willing_to_use_PM_long_plot <- ggplot(willing_to_use_PM_long, aes(x=willingness, y=count)) +
+ geom_bar(stat="identity", aes(fill = SeBIS_score), position = position_dodge())+
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=2,name="GrandBudapest1"))+
+  theme(axis.title.x = element_blank(), legend.title = element_blank())
+
+print(willing_to_use_PM_long_plot)
+
+willing_to_use_PM_df_SeBIS_test <- column_to_rownames(willing_to_use_PM_df_SeBIS, var = "SeBIS_score")
+
+willing_to_use_PM_df_SeBIS_test_fisher <- fisher.test(willing_to_use_PM_df_SeBIS_test)
+
+willing_to_use_PM_df_SeBIS_test_fisher_pval <- willing_to_use_PM_df_SeBIS_test_fisher[["p.value"]]
+
+
+```
+Figure 12. Willingness to use a Password Manager by SeBIS score. Groups determined by high vs. low subject scores on the SeBIS were not significantly different from each other (p = `r willing_to_use_PM_df_SeBIS_test_fisher_pval`).
+
+```{r money_willingness_PM_SeBIS, echo=FALSE, message = FALSE, warning = FALSE}
+
+
+willing_to_use_money_PM_df <- raw_data_SeBIS %>%
+  select(Q40_1, SeBIS_score_category) %>%
+  mutate(money_willingness = as.numeric(Q40_1)) %>%
+  select(money_willingness, SeBIS_score_category)
+
+money_willingness_PM_boxplot <- ggplot(willing_to_use_money_PM_df, aes(y = money_willingness)) + 
+  geom_boxplot(aes(fill = SeBIS_score_category)) + 
+  #facet_grid(SeBIS_score_category~.)+
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+ 
+  theme(axis.title.x = element_blank(), legend.title = element_blank())+ 
+  theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank())
+
+print(money_willingness_PM_boxplot)
+
+money_willingness_by_SeBIS_score_category_t_test <- t.test(money_willingness ~ SeBIS_score_category, data = willing_to_use_money_PM_df)
+money_willingness_by_SeBIS_score_category_t_test_pval <- money_willingness_by_SeBIS_score_category_t_test[["p.value"]]
+
+
+```
+Figure 13. Willingness to spend money on a password manager. Subject groups determined by high vs. low SeBIS scores did not have statistically significant differences in the amount of money they were willing to spend on a password manager (p  = `r money_willingness_by_SeBIS_score_category_t_test_pval`).
+
+```{r update_frequency_SeBIS, echo=FALSE, message = FALSE, warning = FALSE}
+wanted_question_numbers_Q41 <- paste0("Q41_",seq(1,9))
+
+wanted_question_numbers_Q41_SeBIS <- append(wanted_question_numbers_Q41, "SeBIS_score_category")
+
+
+
+update_frequency_df <- raw_data_SeBIS %>%
+  select(all_of(wanted_question_numbers_Q41_SeBIS))
+
+frequency_ordering = c("Never update after installation",
+                       "Update when it stops working",
+                       "Update after several requests",
+                       "Update after every request",
+                       "Enable automatic updates")
+
+frequency_ordering_labels = c("Never",
+                       "Stops",
+                       "Several",
+                       "Every",
+                       "Automatic")
+
+#str(update_frequency_df)
+
+
+update_frequency_df_long <- update_frequency_df %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!c(arbitrary_id, SeBIS_score_category), names_to = "app_category_code", values_to = "frequency_text") %>%
+  mutate(frequency_text = recode(frequency_text,
+                                 "Never update after installation" = "Never",
+                                 "Update when it stops working" = "Stops",
+                                 "Update after several requests" = "Several",
+                                 "Update after every request" = "Every",
+                                 "Enable automatic updates" = "Automatic"
+                                 )) %>%
+  mutate(frequency_text = as.factor(frequency_text)) %>%
+  mutate(frequency_text = fct_relevel(frequency_text, frequency_ordering_labels)) 
+
+app_category_descriptions <- c("banking",
+                               "social_media",
+                               "video_game",
+                               "education",
+                               "job",
+                               "anti_virus",
+                               "shopping_general",
+                               "ordering_food",
+                               "transportation"
+                               )
+
+
+
+
+update_frequency_df_long_plot <- ggplot(update_frequency_df_long, aes(x= app_category_code)) +
+
+  geom_bar(aes(fill=frequency_text), position = position_dodge()) +
+  scale_x_discrete(labels =  app_category_descriptions) +
+  theme_half_open() +
+  theme(axis.text.x = element_text(angle=90, vjust=0.5, hjust=1)) +
+  scale_fill_discrete(name="update_when", labels=frequency_ordering_labels)+
+  scale_fill_manual(values = wes_palette(n=4,name="GrandBudapest1"))+ 
+  theme(axis.title.x = element_blank(), legend.title = element_blank())+
+  facet_wrap(~SeBIS_score_category)
+
+print(update_frequency_df_long_plot)
+
+update_frequency_df_long_summarized <- update_frequency_df_long %>%
+  group_by(SeBIS_score_category, frequency_text) %>%
+  summarise(count = n()) %>%
+  ungroup()
+
+#print(update_frequency_df_long_summarized, n=30)
+
+
+
+update_frequency_df_long_summarized_pretest <- rownames_to_column(update_frequency_df_long_summarized, var = "old_row_names") %>%
+  select(-old_row_names)
+
+
+update_frequency_df_long_summarized_mod <- update_frequency_df_long_summarized %>%
+  pivot_wider(names_from = frequency_text , values_from = count)
+
+
+update_frequency_df_long_summarized_mod_labeled <- column_to_rownames(update_frequency_df_long_summarized_mod, var = "SeBIS_score_category")
+
+
+update_frequency_df_long_summarized_mod_labeled_fisher <- fisher.test(update_frequency_df_long_summarized_mod_labeled)
+update_frequency_df_long_summarized_mod_labeled_fisher_pval <- update_frequency_df_long_summarized_mod_labeled_fisher[["p.value"]]
+
+
+```
+Figure 14. Willingness to update apps by the purpose of the apps in subjects with high vs low SeBIS scores. Overall, subject willingness to keep apps updated was significantly different in high scoring vs. low scoring groups (p = `r update_frequency_df_long_summarized_mod_labeled_fisher_pval`).
+
+```{r willingness_to_verify_permissions_SeBIS, echo=FALSE, message = FALSE, warning = FALSE}
+
+willingness_verify_permissions_df <- raw_data_SeBIS %>%
+
+  select(Q42, SeBIS_score_category) %>%
+  mutate(Not_Applicable_bool = ifelse(str_detect(Q42, "Not Applicable"),1,0),
+         Rarely_bool = ifelse(str_detect(Q42, "Rarely"),1,0),
+         Sometimes_bool = ifelse(str_detect(Q42, "Sometimes"),1,0),
+         Often_bool = ifelse(str_detect(Q42, "Often"),1,0),
+         Always_bool = ifelse(str_detect(Q42, "Always"),1,0)
+         ) %>%
+  select(-Q42)
+  
+willingness_ordering <- c("Not_Applicable", "Rarely", "Sometimes", "Often", "Always")
+
+willingness_verify_permissions_df_low <- willingness_verify_permissions_df %>%
+  filter(as.character(SeBIS_score_category)=="low") %>%
+  summarise(Not_Applicable = sum(Not_Applicable_bool),
+           Rarely = sum(Rarely_bool),
+           Sometimes = sum(Sometimes_bool),
+           Often = sum(Often_bool),
+           Always = sum(Always_bool),
+           ) %>%
+  mutate(SeBIS_score = "low")
+
+#str(willingness_verify_permissions_df_low)
+
+willingness_verify_permissions_df_high <- willingness_verify_permissions_df %>%
+  filter(as.character(SeBIS_score_category)=="high")%>%
+  summarise(Not_Applicable = sum(Not_Applicable_bool),
+           Rarely = sum(Rarely_bool),
+           Sometimes = sum(Sometimes_bool),
+           Often = sum(Often_bool),
+           Always = sum(Always_bool),
+           ) %>%
+  mutate(SeBIS_score = "high")
+
+
+willingness_verify_permissions_df_low_high <- willingness_verify_permissions_df_low %>%
+  bind_rows(willingness_verify_permissions_df_high)
+
+
+willingness_verify_permissions_long_SeBIS <- willingness_verify_permissions_df_low_high %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!c(arbitrary_id,SeBIS_score), names_to = "willingness", values_to = "count") %>%
+  select(-arbitrary_id)%>%
+  mutate(willingness = as.factor(willingness)) %>%
+  mutate(willingness = fct_relevel(willingness, willingness_ordering))
+
+
+willingness_verify_permissions_long_SeBIS_plot <- ggplot(willingness_verify_permissions_long_SeBIS, aes(x=willingness, y=count)) +
+  geom_bar(stat="identity", aes(fill=SeBIS_score), position = position_dodge())+
+  scale_fill_manual(values = wes_palette(n=4,name="GrandBudapest1"))+ 
+  theme_half_open()+
+  theme(axis.title.x = element_blank(), legend.title = element_blank())
+
+print(willingness_verify_permissions_long_SeBIS_plot)
+
+willingness_verify_permissions_df_low_high_test <- column_to_rownames(willingness_verify_permissions_df_low_high, var = "SeBIS_score")
+
+willingness_verify_permissions_df_low_high_test_fisher_exact <- fisher.test(willingness_verify_permissions_df_low_high_test)
+willingness_verify_permissions_df_low_high_test_fisher_exact_pval <- willingness_verify_permissions_df_low_high_test_fisher_exact[["p.value"]]
+
+
+```
+Figure 15. Willingness to verify app permissions are the minimum required for the app to function for high and low SeBIS scoring subjects. Subject willingness to verify that app persmissions are the minimum required for the app to function between high and low scoring groups was significantly different (p = `r willingness_verify_permissions_df_low_high_test_fisher_exact_pval`).
+
+
+```{r travel_behavior_SeBIS, echo=FALSE, message = FALSE, options = 60}
+# wanted_question_numbers_Q44 <- paste0("Q44_",seq(1,6))
+
+wanted_question_numbers_Q44 <- c("Q44_6", "Q44_1", "Q44_3", "Q44_4", "SeBIS_score_category")
+
+travel_behavior_SeBIS_df <- raw_data_SeBIS %>%
+  select(all_of(wanted_question_numbers_Q44))
+
+travel_behavior_ordering = c("Unlikely",
+                       "Not Sure",
+                       "Likely")
+
+travel_behavior_SeBIS_df_long <- travel_behavior_SeBIS_df %>%
+  mutate(arbitrary_id = row_number()) %>%
+  pivot_longer(!c(arbitrary_id, SeBIS_score_category), names_to = "travel_behavior_code", values_to = "travel_behavior_text") 
+
+
+travel_behavior_SeBIS_df_long_summary <- travel_behavior_SeBIS_df_long %>%
+  group_by(SeBIS_score_category, travel_behavior_code, travel_behavior_text, .drop = FALSE) %>%
+  summarise(count = n()) %>%
+  ungroup() %>%
+  complete(SeBIS_score_category, travel_behavior_code, travel_behavior_text, fill = list(count=0)) #%>%
+
+
+travel_behavior_SeBIS_df_long_summary_extended <- travel_behavior_SeBIS_df_long_summary %>%
+  mutate(travel_behavior_text = as.factor(travel_behavior_text)) %>%
+  mutate(travel_behavior_text = fct_relevel(travel_behavior_text, travel_behavior_ordering)) %>%
+  mutate(travel_behavior_code_group = recode(travel_behavior_code,
+                                             "Q44_6"="public",
+                                             "Q44_1"="public",
+                                             "Q44_3"="non_public",
+                                             "Q44_4"="non_public") ) %>%
+  mutate(travel_behavior_code_group = as.factor(travel_behavior_code_group)) %>%
+  mutate(travel_behavior_code = recode(travel_behavior_code,
+                                             "Q44_6"="hotspot_unknown",
+                                             "Q44_1"="wifi_public",
+                                             "Q44_3"="wifi_non_public",
+                                             "Q44_4"="hotspot_personal") )
+
+
+travel_behavior_SeBIS_df_long_summary_extended_all_plot<- ggplot(travel_behavior_SeBIS_df_long_summary_extended, aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  facet_wrap(travel_behavior_code_group~.~SeBIS_score_category, scales = "free_x")+
+  #scale_x_discrete(labels =  travel_behavior_descriptions_public) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1))# +
+  #ylim(0,19)
+
+
+travel_behavior_SeBIS_df_long_summary_extended_low_plot<- ggplot(travel_behavior_SeBIS_df_long_summary_extended %>% filter(as.character(SeBIS_score_category) =="low"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  facet_wrap(travel_behavior_code_group~., scales = "free_x")+
+  #scale_x_discrete(labels =  travel_behavior_descriptions_public) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1))# +
+  #ylim(0,19)
+
+
+travel_behavior_SeBIS_df_long_summary_extended_high_plot<- ggplot(travel_behavior_SeBIS_df_long_summary_extended %>% filter(as.character(SeBIS_score_category) =="high"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  facet_wrap(travel_behavior_code_group~., scales = "free_x")+
+  #scale_x_discrete(labels =  travel_behavior_descriptions_public) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1))# +
+  #ylim(0,19)
+
+travel_behavior_SeBIS_df_long_summary_extended_low_public_plot<- ggplot(travel_behavior_SeBIS_df_long_summary_extended %>% filter(as.character(SeBIS_score_category) =="low", as.character(travel_behavior_code_group) =="public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank())+
+  ylim(0,8)
+
+travel_behavior_SeBIS_df_long_summary_extended_high_public_plot<- ggplot(travel_behavior_SeBIS_df_long_summary_extended %>% filter(as.character(SeBIS_score_category) =="high", as.character(travel_behavior_code_group) =="public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank()) +
+  ylim(0,8)
+
+
+travel_behavior_SeBIS_df_long_summary_extended_low_non_public_plot<- ggplot(travel_behavior_SeBIS_df_long_summary_extended %>% filter(as.character(SeBIS_score_category) =="low", as.character(travel_behavior_code_group) =="non_public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank())+
+  ylim(0,8)
+
+
+travel_behavior_SeBIS_df_long_summary_extended_high_non_public_plot<- ggplot(travel_behavior_SeBIS_df_long_summary_extended %>% filter(as.character(SeBIS_score_category) =="high", as.character(travel_behavior_code_group) =="non_public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(legend.position = "none", axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank()) +
+  ylim(0,8)
+
+
+travel_behavior_SeBIS_df_long_summary_extended_high_non_public_plot_legend<- ggplot(travel_behavior_SeBIS_df_long_summary_extended %>% filter(as.character(SeBIS_score_category) =="high", as.character(travel_behavior_code_group) =="non_public"), aes(x= travel_behavior_code, y = count)) +
+  geom_bar(stat = "identity", aes(fill=travel_behavior_text), position = position_dodge()) +
+  theme_half_open() +
+  scale_fill_manual(values = wes_palette(n=3,name="GrandBudapest1"))+
+  theme(axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), axis.title.x = element_blank(), legend.title = element_blank()) +
+  ylim(0,8)
+
+plot_grid(travel_behavior_SeBIS_df_long_summary_extended_low_public_plot,
+          travel_behavior_SeBIS_df_long_summary_extended_low_non_public_plot,
+          #cowplot::get_legend(travel_behavior_df_long_non_public_plot_legend),
+          labels = c('A','B'),
+          ncol =3,
+          align = "h", 
+          axis = "b")
+
+plot_grid(
+          travel_behavior_SeBIS_df_long_summary_extended_high_public_plot,
+          travel_behavior_SeBIS_df_long_summary_extended_high_non_public_plot,
+          cowplot::get_legend(travel_behavior_SeBIS_df_long_summary_extended_high_non_public_plot_legend),
+          labels = c('C','D'),
+          ncol =3,
+          align = "h", 
+          axis = "b")
+
+
+travel_behavior_df_wide_summary_extended_wifi_high <- travel_behavior_SeBIS_df_long_summary_extended %>%
+  filter(as.character(SeBIS_score_category) %in% c("high")) %>%
+  filter(as.character(travel_behavior_code) %in% c("wifi_public", "wifi_non_public")) %>%
+  group_by(travel_behavior_code_group, travel_behavior_text) %>%
+  summarise(count = sum(count)) %>%
+  pivot_wider(names_from = travel_behavior_text , values_from = count)
+  
+  
+travel_behavior_df_wide_summary_extended_wifi_high_pretest <- column_to_rownames(travel_behavior_df_wide_summary_extended_wifi_high, 'travel_behavior_code_group')
+
+travel_behavior_df_wide_summary_extended_wifi_high_fisher <- fisher.test(travel_behavior_df_wide_summary_extended_wifi_high_pretest)
+travel_behavior_df_wide_summary_extended_wifi_high_fisher_pval <- travel_behavior_df_wide_summary_extended_wifi_high_fisher[["p.value"]]
+
+#print("low public vs non public")
+
+travel_behavior_df_wide_summary_extended_wifi_low <- travel_behavior_SeBIS_df_long_summary_extended %>%
+  filter(as.character(SeBIS_score_category) %in% c("low")) %>%
+  filter(as.character(travel_behavior_code) %in% c("wifi_public", "wifi_non_public"))%>%
+  group_by(travel_behavior_code_group, travel_behavior_text) %>%
+  summarise(count = sum(count)) %>%
+  pivot_wider(names_from = travel_behavior_text , values_from = count)
+  
+  
+travel_behavior_df_wide_summary_extended_wifi_low_pretest <- column_to_rownames(travel_behavior_df_wide_summary_extended_wifi_low, 'travel_behavior_code_group')
+
+
+travel_behavior_df_wide_summary_extended_wifi_low_fisher <- fisher.test(travel_behavior_df_wide_summary_extended_wifi_low_pretest)
+travel_behavior_df_wide_summary_extended_wifi_low_fisher_pval <- travel_behavior_df_wide_summary_extended_wifi_low_fisher[["p.value"]]
+
+
+
+
+#print("hotspot")
+#print("high public vs non public")
+
+travel_behavior_df_wide_summary_extended_hotspot_high <- travel_behavior_SeBIS_df_long_summary_extended %>%
+  filter(as.character(SeBIS_score_category) %in% c("high")) %>%
+  filter(as.character(travel_behavior_code) %in% c("hotspot_unknown", "hotspot_personal")) %>%
+  group_by(travel_behavior_code_group, travel_behavior_text) %>%
+  summarise(count = sum(count)) %>%
+  pivot_wider(names_from = travel_behavior_text , values_from = count)
+  
+  
+travel_behavior_df_wide_summary_extended_hotspot_high_pretest <- column_to_rownames(travel_behavior_df_wide_summary_extended_hotspot_high, 'travel_behavior_code_group')
+
+travel_behavior_df_wide_summary_extended_hotspot_high_fisher <- fisher.test(travel_behavior_df_wide_summary_extended_hotspot_high_pretest)
+travel_behavior_df_wide_summary_extended_hotspot_high_fisher_pval <- travel_behavior_df_wide_summary_extended_hotspot_high_fisher[["p.value"]]
+
+
+
+#print("low public vs non public")
+travel_behavior_df_wide_summary_extended_hotspot_low <- travel_behavior_SeBIS_df_long_summary_extended %>%
+  filter(as.character(SeBIS_score_category) %in% c("low")) %>%
+  filter(as.character(travel_behavior_code) %in% c("hotspot_unknown", "hotspot_personal"))%>%
+  group_by(travel_behavior_code_group, travel_behavior_text) %>%
+  summarise(count = sum(count)) %>%
+  pivot_wider(names_from = travel_behavior_text , values_from = count)
+  
+travel_behavior_df_wide_summary_extended_hotspot_low_pretest <- column_to_rownames(travel_behavior_df_wide_summary_extended_hotspot_low, 'travel_behavior_code_group')
+
+travel_behavior_df_wide_summary_extended_hotspot_low_fisher <- fisher.test(travel_behavior_df_wide_summary_extended_hotspot_low_pretest)
+travel_behavior_df_wide_summary_extended_hotspot_low_fisher_pval <- travel_behavior_df_wide_summary_extended_hotspot_low_fisher[["p.value"]]
+
+```
+Figure 16. Behavior around internet access while traveling in groups determined by high vs. low scores on the SeBIS. A. Low scoring subjects' preferences for using hotspots from an unknown source or public wifi. B. Low scoring subjects' preferences for using their personal hotspot or waiting until a non-public wifi is available. C. High scoring subjects' preferences for using hotspots from an unknown source or public wifi. D. High scoring subjects' preferences for using their personal hotspot or waiting until a non-public wifi is available.  For wifi preferences, high scoring subject intentions to seek public vs. non-public alternatives when seeking an internet connection were significantly different (p = `r travel_behavior_df_wide_summary_extended_wifi_high_fisher_pval`). Also for wifi preferences, low scoring subject intentions to seek public vs. non-public alternatives when seeking an internet connection were not significantly different (p = `r travel_behavior_df_wide_summary_extended_wifi_low_fisher_pval`). For hotspot preferences, high scoring subject intentions to seek public vs. non-public alternatives when seeking an internet connection were significantly different (p = `r travel_behavior_df_wide_summary_extended_hotspot_high_fisher_pval`). Also for hotspot preferences, low scoring subject intentions to seek public vs. non-public alternatives when seeking an internet connection were not significantly different (p = `r travel_behavior_df_wide_summary_extended_hotspot_low_fisher_pval`).
+
+# Discussion
+
+### Multi-Factor Authentication Preferences
+
+After reading the tip sheet from CISA, subjects appeared to be willing to spend a relatively large amount of time setting up MFA for their online accounts. That finding might be due to social desirability bias, due to subjects assumption that the designers of the survey might not respect them if they selected a low number. It could also be due to the number of websites subjects were considering: that result has a different connotation if the subjects were considering spending 33.17 minutes setting up MFA for 100 websites vs. setting up MFA for 5 websites. Further research could further question subjects to determine the reliability and reason for that finding. However, it is useful to consider that for the population considered for this study, reaching at least 75% of individuals might require MFA times that add up to at most ten minutes. 
+
+The MFA preferences by type of website (i.e. banking, learning, shopping, and social media) were significantly different. Subjects were most willing to use MFA for banking, although a compromise of any of those website types has a potential risk of exposure of some PII. Judging by those results, using an appeal to financial risk could be beneficial in motivating end-users to adopt MFA.
+
+### Willingness to Use a Password Manager
+
+Even though subjects had just read a tip sheet from CISA, which they might perceive as an expert source, only about half the subjects were willing to use a password manager. Many subjects were not sure whether they wanted to use a password manager, and few subjects were unwilling to use one. However, most subjects agreed that password managers have financial value. It is worth exploring this value gap further to explain why subjects might feel that password manager services are valuable and yet not be willing to use them. From this study's findings, it appears tip sheets alone might not be enough to sway individuals to adopt password managers.
+
+### Willingness to Update Apps
+
+Subjects were generally willing to update their apps across different app types at least sometimes, but many subjects were still unwilling to keep their apps updated automatically or after every request. Furthermore, some subjects were only willing to update after their apps stops working. These data seem to indicate that tip sheets alone are not effective to convince end-users to keep their apps updated. It is possible that end-users suffer from updating fatigue. App designers might consider making automatic updates the norm to avoid security gaps caused by apps that are not updated, or operating system designers to streamline the process of application updates to lower the time and effort required for end-users to update their apps.
+
+### Willingness to Verify App permissions
+
+Subjects were not convinced by the tip sheet to verify app permissions are the minimum required for their apps to function. Verifying permissions might require technical knowledge that most end-users do not possess and a time investment that is too high for many end-users. Protecting end-user information privacy by granting minimum permissions might be accomplished by the operating system designers. Automated brute-force testing to check functionality given every combination of permissions could be a requirement for publishing an app or app update. However, in the current surveillance capitalist system, that kind of strategy might be in direct opposition to the motivations behind app development.
+
+### Wifi-Seeking Behavior While Traveling
+
+In overall subject-situation encounters related to internet access while traveling, non-privacy seeking responses were significantly different from non-privacy seeking responses. There were more privacy-seeking subject-situation encounters (e.g. Unlikely to use an unknown hotspot) than other available possibilities, but some subjects were still not willing to seek privacy for their internet connection while traveling. It is possible that this data could result because of subjects not being able to afford a private online connection, and further research could determine the extent of that cause of the problem. However, if subjects have private choices available and are simply choosing to use other wireless internet access points, tip sheets are not effective in convincing all end-users to use secure behaviors.
+
+## Grouped Subject Responses
+
+SeBIS score group (high vs. low) results was not related to MFA preferences and password manager preferences. The apparent lack of relationship could be due to a loss of sensitivity due to the adaptation of the SeBIS responses. However, SeBIS score group was related to subject willingness to update apps, verify app permissions, and to the statistical difference between privacy-seeking and non-privacy seeking behavior while considering wireless internet use. Another explanation for these data is that the privacy paradox is exhibited in some situations. That does not mean that behavior categories are useless. Given these results, organizations could test the relationship between categories and behavior in sample populations that are representative of the populations of interest instead of assuming a relationship. One way to accomplish this could be running the scripts that accompany this publication using the survey that accompanies this publication and evaluating the automatically-calculated results.
+
+## Ecological Validity
+Also discussed in the limitations section, the subjects in this study are likely not representative of other populations of interest. Further research should examine whether there are any patterns in a representative sample of the US or world population by age or education factors.
+
+
+## Intervention Effectiveness
+Finally, this study examined subject perceptions after reading the tip sheets while not verifying baseline perceptions before reading the tip sheets. Future studies could gather a baseline that would enable comparison of the direct effects of a tip sheet or other intervention. However, the results in this study are arguably more relevant to computer security, because the goal of information privacy and security is to persuade individuals no matter their prior perceptions about the topic. Of course, examining the effectiveness of tip-sheet interventions is also a worthwhile goal and will hopefully be studied by future research studies.
+
+
+# Conclusions
+
+* MFA enrollment should be as quick as possible, since longer enrollmnent times might become a barrier for adoption.
+
+* Appealing to financial risks of online activity might be a successful strategy to promote adoption of MFA.
+
+* Tip sheets might not be enough to convince end-users to use password managers, although subjects seemed to believe password managers are financially valuable.
+
+* End-users are not all willing to keep apps updated, so security updates should be easier for them or happen without the need for their participation.
+
+* In the current environment, it appears verification of minimum app permissions is not a feasible alternative for protecting end-user privacy. That goal might require the intervention by operating system designers to provide app-specific automated testing of permissions.
+
+* Tip sheets do not appear to be sufficient to convince all end-users to seek private wireless internet connections. 
+
+* Overall, tip sheets do not appear to be fully effective in convincing all end-users to protect their personal information. Tip sheets should be used in conjunction with other methods to promote secure behavior in end-user populations.
+
+* Prediction of end-user behavior by their behavior-intention category should be used only if a relationship has been found in a sample population representative of the target population, since the relationship does not always exist.
+
+# Appendix: Entire Survey Instrument
+
+
+## SeBIS questionnaire (24 questions, true false)
+
+1. When I'm prompted about a software update, I install it right away.
+2. When my computer wants me to reboot after applying an update or installing software, I put it off.
+3. I try to make sure that the programs I use are up-to-date. 
+4. I manually lock my computer screen when I step away from it. 
+5. I set my computer screen to automatically lock if I don't use it for a prolonged period of time. 
+6. I log out of my computer, turn it off, put it to sleep, or lock the screen when I'm done using it. 
+7. I use a PIN or passcode to unlock my mobile phone. 
+8. I use a password/passcode to unlock my laptop or tablet. 
+9. If I discover a security problem, I continue what I was doing because I assume someone else will fix it
+10. When someone sends me a link, I open it without first verifying where it goes. 
+11. I verify that my anti-virus software has been regularly updating itself. 
+12. When browsing websites, I mouseover links to see where they go, before clicking them. 
+13. I know what website I'm visiting based on its look and feel, rather than by looking at the URL bar. 
+14. I backup my computer. 
+15. When I hear about websites that have been hacked, I wait to change my passwords until I have been personally notified. 
+16. I use some kind of encryption software to secure sensitive files or personal information. 
+17. I do not change my passwords, unless I have to. 
+18. I use different passwords for different accounts that I have. 
+19. I do not include special characters in my password if it's not required. 
+20. When I create a new online account, I try to use a password that goes beyond the site's minimum requirements. 
+21. When I'm done using a website that I'm logged into, I manually log out of it. 
+22. I submit information to websites without first verifying that it will be sent securely 
+23. I use privacy software, "private browsing," or "incognito" mode when I'm browsing online. 
+24. I clear my web browsing history.
+
+## Reading block
+
+Please read through this tip sheet: online privacy https://www.cisa.gov/sites/default/files/publications/NCSAM_OnlinePrivacy_2020.pdf
+
+Please write a short paragraph listing the types of tips discussed in the article
+
+## Study Survey Questions
+
+Multi-Factor Authentication (MFA) involves using something you have or something you are (in addition to your username and password) to verify your identity when  you log in.
+
+Common ways of using something you have:
+
+* use a separate security token or app
+* receive verification texts, calls, or emails
+* use a smart card
+
+Common ways of using something you are:
+
+* use your fingerprint
+* use facial recognition
+* use voice recognition
+
+Are you willing to set up MFA on your online accounts? 
+(yes) On which kinds of online accounts are you using or would you be willing to use Multi-Factor Authentication (MFA)? 
+* social media
+* banking  
+* online learning
+* shopping
+
+
+Imagine you have 100 minutes of free time. How much time out of those 100 minutes would you be willing to spend setting up MFA for an online account? (text entry, 0 minutes - 100 minutes, numeric verification)
+
+A password manager is an app protected by one main password. It makes password use more secure and convenient. It can 
+
+* store your passwords
+* generate strong passwords
+
+Would you be willing to use a password manager? 
+(yes) 
+
+Please select how you would update apps in these categories: (not applicable (do not use that type of app), never update after installation, update when it stops working, update after more than one request, update after every request, enable automatic updates so that app is constantly updated)
+
+* banking app
+* social media app
+* video game app
+* app required for education
+* app required to perform your job
+* anti-virus or anti-malware app
+* app for buying products
+* app for ordering food
+* ride-sharing (transportation) app
+
+When you download an app, how often do you intend to verify the types of access permissions the app has are the minimum required? (not applicable, rarely, sometimes, often, always)
+
+What is the red round rubber ball made out of?
+
+* spherical
+* oval
+* red
+* rubber
+
+Imagine you are traveling and you need to find an internet connection to access your bank account online. How likely are you to: (Very likely, somewhat likely, unlikely / would avoid entirely)
+
+* use a public wireless internet connection?
+* wait to ask available staff for the public wifi name and login instructions? (yes) How many minutes would you wait to verify that information? (text response, verify numeric)
+* wait until you reach a trusted non-public wireless internet connection?
+* use your mobile phone as a wireless internet hotspot?
+* Connect to a wireless network without asking nearby staff?
+* Connect to someone else's mobile phone hotspot that seems to have forgotten to protect it with a password?
+
+
+
+How seriously did you take this study? (slider)
+
+# References
+
+
